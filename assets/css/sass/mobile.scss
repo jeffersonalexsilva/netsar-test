@@ -1,3 +1,4 @@
+@import 'functions';
 $width_content:90%;
 .center{
     @include center-content($width_content);

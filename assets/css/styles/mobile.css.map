@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,OAAO;ECDH,KAAK,EDAM,GAAG;ECCd,MAAM,EAAE,MAAM",
+"sources": ["../sass/mobile.scss","../sass/_functions.scss"],
 "names": [],
 "file": "mobile.css"
 }
