@@ -6,11 +6,8 @@
 @import url(mobile.css) (max-width:800px);
 @import url(desktop.css) (min-width:801px);
 
-$width_content:1200px;
-
 #principal{
     .center{
-        @include center-content($width_content);
         &:after{
             @include clear-after(true);
         }

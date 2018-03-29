@@ -507,12 +507,9 @@ div.card {
           clear: both;
           display: block; }
 
-#principal .center {
-  width: 1200px;
-  margin: 0 auto; }
-  #principal .center:after {
-    content: "";
-    clear: both;
-    display: block; }
+#principal .center:after {
+  content: "";
+  clear: both;
+  display: block; }
 
 /*# sourceMappingURL=base.css.map */
