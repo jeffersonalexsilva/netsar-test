@@ -1,3 +1,9 @@
-
+#principal header#page-header aside.side-tag-page, #principal header#page-header nav.nav-menu-top {
+  float: left;
+  margin-right: 60px; }
+#principal header#page-header nav.nav-menu-top ul li {
+  display: inline-block; }
+#principal header#page-header aside.side-profile {
+  float: right; }
 
 /*# sourceMappingURL=desktop.css.map */

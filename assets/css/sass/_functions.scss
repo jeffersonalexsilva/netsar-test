@@ -1,4 +1,4 @@
-@mixin center-content(){
+@mixin center-content($width_content){
     width: $width_content;
     margin: 0 auto;
 }
@@ -21,6 +21,14 @@
     -webkit-box-sizing: $style;
 }
 
+@mixin box-shadow($size){
+	box-shadow: 0 2px $size $bg_shadow;
+	-webkit-box-shadow:0 2px $size $bg_shadow;
+	-moz-box-shadow:0 2px $size $bg_shadow;
+	-o-box-shadow:0 2px $size $bg_shadow;
+	-ms-box-shadow:0 2px $size $bg_shadow;
+}
+
 @mixin clear-after($arg){
 	content:"";
     @if $arg == true {
@@ -41,4 +49,12 @@
     background-image: linear-gradient($direction, $color1 0%, $color2 100%);
     background-image: -webkit-linear-gradient($direction, $color1 0%, $color2 100%);
     background-image: -moz-linear-gradient($direction, $color1 0%, $color2 100%);
+}
+
+@mixin box-flex($arg){
+    -webkit-box-flex: $arg;            /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: $arg;               /* OLD - Firefox 19- */
+    -webkit-flex: $arg;                /* Chrome */
+    -ms-flex: $arg;                    /* IE 10 */
+    flex: $arg;   
 }

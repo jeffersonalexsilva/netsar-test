@@ -1,3 +1,200 @@
-$font_size_name:2.2em;
-$font_size_subtitle:0.9em;
+$background_header:#e0e0e0;
+$bg_alert:#828282;
+$font_size_menu_top:0.8em;
+$bg_info_banner: rgba(244,244,244,0.9);
+$border_style_info: 1px solid $bg_alert;
 
+@mixin border-radius-info(){
+	-webkit-border-radius: $radius_border_button $radius_border_button 0 0;
+	-moz-border-radius: $radius_border_button $radius_border_button 0 0;
+	-ms-border-radius: $radius_border_button $radius_border_button 0 0;
+	border-radius: $radius_border_button $radius_border_button 0 0;
+}
+
+#principal{
+    header#page-header{
+        background-color: $background_header;
+        padding: 5px 0;
+        position: relative;
+        aside.side-tag-page{
+            font-weight: 700;
+            padding: 10px;
+        }
+        nav.nav-menu-top{
+            ul{
+                li{
+                    display: inline-block;
+                    font-size: $font_size_menu_top; 
+                    a{
+                        display: block;
+                        position: relative;
+                        padding: 10px 15px;
+                        z-index: 0;
+                        span{
+                            &.text{
+                                display: block;
+                                z-index: 1;
+                            }
+                            &.i-alert{
+                                color:$color_white;
+                                @include border-radius($radius_border_button);
+                                padding: 5px;
+                                background-color: $bg_alert;
+                                font-size: $font_size_menu_top - 0.2;
+                                position: absolute;
+                                top:0;
+                                right: 0;
+                                z-index: 3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        aside.side-profile{
+            dl{
+                float: left;
+                line-height: 1.3em;
+                dt{
+                    font-size: $font_size_menu_top - 0.2;
+                }
+                dd{
+                    font-weight: 700;
+                }
+            }
+            figure.picture{
+                float: right;
+                width: 36px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    padding: 2px;
+                }
+            }
+            &:after{
+                @include clear-after(true);
+            }
+        }
+        div.header-area-info{
+            position: relative;
+            background-image: url(../../img/banner/img-miami-banner.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            height: 380px;
+            .center{
+                height:100%;
+                position: relative;
+                aside.info-agency{
+                    position: absolute;
+                    z-index: 5;
+                    top:0;
+                    left:0;
+                    height: 100%;
+                    width: 20%;
+                    background-color: $bg_info_banner;
+                    div.entry{
+                        padding: 20px;
+                        figure.logo-agency{
+                            display: block;
+                            padding: 10px;
+                            margin: 20px 0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        div.info-advertise{
+                            padding: 20px 10px;
+                            border-top: $border_style_info;
+                            border-bottom: $border_style_info;
+                            h4.title-agency{
+                                padding: 5px 0;
+                            }
+                            span{
+                                font-weight: 400;
+                            }
+                            p{
+                                font-weight: 100;
+                                font-size: $font_size_menu_top;
+                            }
+                        }
+                        address.info-contacts{
+                            padding: 20px 0;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: $font_size_menu_top - 0.1;
+                            ul{
+                                li{
+                                    padding:5px 0;
+                                    display: block;
+                                    i{
+                                        padding: 8px;
+                                        display: inline;
+                                        background-position: 50% 50%;
+                                        background-repeat: no-repeat;
+                                        background-size: 100%;
+                                        margin-right: 10px;
+                                        &.icon-mail{background-image: url(../../img/icon-mail);}
+                                        &.icon-phone{background-image: url(../../img/icon-phone);}
+                                    }
+                                    span.phone{font-weight: 700;font-size: 1.1em}
+                                }
+                            }
+                        }
+                    }
+                }
+                aside.side-info-banner{
+                    position: absolute;
+                    background-color: $bg_info_banner;
+                    @include border-radius-info();
+                    right:0;
+                    bottom:0;
+                    div{
+                        //display: inline-table;
+                        float: left;
+                        padding: 15px 20px;
+                        &.info-banner-welcome{
+                            padding-top:40px;
+                            h3.title-customer{
+                                display: inline-block;
+                                margin-right: 10px;
+                                span.hello{
+                                    display: block;
+                                    font-size: $font_size_menu_top;
+                                    font-weight: normal;
+                                }
+                            }
+                            a.bt{
+                                display: inline-block;
+                                background-color: $bg_alert;
+                                font-size: $font_size_menu_top;
+                                color: $color_white;
+                                margin: 0 50px;
+                            }
+                        }
+                        &.info-local-banner{
+                            margin-left: 50px;
+                            h2.title-local{
+                                font-size: 2.5em;
+                                span.hello{
+                                    display: block;
+                                    font-size: $font_size_menu_top - 0.5;
+                                    font-weight: normal;
+                                }
+                            }
+                            a.a-info-local{
+                                display: inline-block;
+                               // padding: 10px 0;
+                                font-size: $font_size_menu_top;
+                            }
+                        }
+                    }
+                    &:after{
+                        @include clear-after(true);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,3 +3,24 @@ $width_thumb_article:55%;
 $width_txt_article:35%;
 $height_job_article:550px;
 
+#principal{
+    header#page-header{
+        aside.side-tag-page,nav.nav-menu-top{
+            float: left;
+            margin-right: 60px;
+        }
+        nav.nav-menu-top{
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+
+                    }
+                }
+            }
+        }
+        aside.side-profile{
+            float: right;
+        }
+    }
+}

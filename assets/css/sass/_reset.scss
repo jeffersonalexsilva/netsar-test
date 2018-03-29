@@ -1,13 +1,14 @@
-$background_header:#1f7c6c;
 $color_white:#f2f2f2;
-$color_txt_base: #252525;
+$color_txt_base: #4f4f4f;
 $color_link_base: #333;
-$font_base: 'Open Sans',sans-serif;
+$bg_shadow:#bdbdbd;
+$font_base: 'Roboto',sans-serif;
 $bg_color_base: #FFF;
 $font_size_base:1em;
 $radius_border_button:3px;
+$size_shadow_card:5px;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900');
 @import 'functions';
 
 *,html {
@@ -20,7 +21,7 @@ body {
 	background-color: $bg_color_base;
 	color: $color_txt_base;
 	font-size: 1em;
-    font-weight: 100;
+    font-weight: 400;
 }
 article {
 	display: block;

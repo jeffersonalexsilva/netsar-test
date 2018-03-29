@@ -1,0 +1,129 @@
+$bg_left:#828282;
+$bg_right:#e0e0e0;
+.bt{
+    padding: 10px 15px;
+    @include border-radius($radius_border_button);
+}
+
+div.card{
+    background-color: $color_white;
+    @include border-radius($radius_border_button);
+    @include box-shadow($size_shadow_card);
+    overflow: hidden;
+    margin: 20px 0;
+    .entry-card{
+        display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+        display: -ms-flexbox;           /* TWEENER - IE 10 */
+        display: -webkit-flex;          /* NEW - Chrome */
+        display: flex;
+        align-items: flex-center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .left,.right{
+            // float:left;
+            // height: 100%;
+            position: relative;
+            .entry{padding: 15px}
+        }
+        .left{
+            @include box-flex(1);
+            background-color: $bg_left;
+            color: $color_white;
+            .date-time{
+                display: block;
+                font-size: $font_size_base + 0.8;
+                font-weight: 900;
+                text-align: center;
+                border-bottom: 1px solid $color_white;
+                padding: 20px 0
+            }
+            p.entry-info{
+                font-size: $font_size_base - 0.2;
+                padding: 10px 0;
+            }
+            div.more-actions{
+                figure.icon-action, a.bt{float:left}
+                figure.icon-action{
+                    text-align: center;
+                    position: relative;
+                    width: 20%;
+                    img{width: 100%;height: auto;}
+                    figcaption{
+                        font-size: $font_size_base - 0.2;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                    }
+                }
+                a.bt{
+                    background-color:$bg_shadow;
+                    font-size: $font_size_base - 0.2;
+                    margin: 5% 10%;
+                }
+                &:after{
+                    @include clear-after(true);
+                }
+            }
+        }
+        .right{
+            @include box-flex(4);
+            // width:80%;
+            background-color: $bg_right;
+            header.head-card{
+                border-bottom: 1px solid $color_white;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                h2.title-card,aside.detail{float: left}
+                h2.title-card{
+                    font-size: $font_size_base + 2.5;
+                    text-transform: uppercase;
+                    width: 30%;
+                }
+                aside.detail{
+                    width: 70%;
+                    ul.list-detail{
+                        li.item-detail{
+                            display: block;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+                &:after{
+                    @include clear-after(true);
+                }
+            }
+            .content-card{
+                dl.info-voucher-card{
+                    dt,dd{display: inline-block;padding: 5px;font-size: $font_size_base - 0.2}
+                    dt{font-weight: 700}
+                }
+                table.table-info-voucher{
+                    margin: 10px 0;
+                    width: 100%;
+                    font-size: $font_size_base - 0.1;
+                    text-align: center;
+                    th,td{position:relative;}
+                    th{background-color: $bg_shadow}
+                    tr{padding: 5px 0;}
+                    td{
+                        padding: 5px;
+                        img{width: 100%;height: auto;max-width: 50px}
+                    }
+                }
+            }
+        }
+        &.flight{
+    
+        }
+        &.services{
+            
+        }
+        footer.foot-card-info{
+            p{
+                font-size: $font_size_base - 0.2;
+                padding: 10px;
+                margin: 0;
+            }
+        }
+    }
+}

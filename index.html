@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <div class="principal">
+    <div id="principal">
         <header id="page-header">
             <div class="center">
-                <aside class="side-tag-page"></aside>
+                <aside class="side-tag-page">Web confirmação de reserva</aside>
                 <nav class="nav-menu-top">
                     <ul class="menu-top-list">
                         <li class="menu-top-item">
                             <a href="#">
                                 <span class="text">Viagens Realizadas</span>
-                                <span class="i-alert"></span>
+                                <!-- <span class="i-alert"></span> -->
                             </a>
                         </li>
                         <li class="menu-top-item">
@@ -34,7 +34,7 @@
                         <li class="menu-top-item">
                             <a href="#">
                                 <span class="text">Meus interesses de viagem</span>
-                                <span class="i-alert"></span>
+                                <!-- <span class="i-alert"></span> -->
                             </a>
                         </li>
                     </ul>
@@ -52,24 +52,26 @@
             <div class="header-area-info">
                 <div class="center">
                     <aside class="info-agency">
-                        <figure class="logo-agency">
-                            <img src="assets/img/netsar-logo-black.png">
-                        </figure>
-                        <div class="info-advertise">
-                            <h4 class="title-agency">Explore Travel Viagens</h4>
-                            <strong>Travel Specialist</strong>
-                            <p>Inforação extra sobre a agência</p>
+                        <div class="entry">
+                            <figure class="logo-agency">
+                                <img src="assets/img/netsar-logo-black.png">
+                            </figure>
+                            <div class="info-advertise">
+                                <h4 class="title-agency">Explore Travel Viagens</h4>
+                                <span>Travel Specialist</span>
+                                <p>Inforação extra sobre a agência</p>
+                            </div>
+                            <address class="info-contacts">
+                                <ul class="list-contacts">
+                                    <li class="item-contact">
+                                        <i class="icon-mail"></i><a href="#">reservas@exploretravel.com.br</a>
+                                    </li>
+                                    <li class="item-contact">
+                                        <i class="icon-phone"></i><a href="#"><span class="prefix">+55 11</span><span class="phone">3073.0804</span></a>
+                                    </li>
+                                </ul>
+                            </address>
                         </div>
-                        <address class="info-contacts">
-                            <ul class="list-contacts">
-                                <li class="item-contact">
-                                    <i class="icon-mail"></i><a href="#">reservas@exploretravel.com.br</a>
-                                </li>
-                                <li class="item-contact">
-                                    <i class="icon-phone"></i><a href="#"><span class="prefix">+55 11</span><span class="phone">3073.0804</span></a>
-                                </li>
-                            </ul>
-                        </address>
                     </aside>
                     <aside class="side-info-banner">
                         <div class="info-banner-welcome">
@@ -78,6 +80,7 @@
                         </div>
                         <div class="info-local-banner">
                             <h2 class="title-local"><span class="hello">Sua viagem para</span>Miami - EUA</h2>
+                            <a href="#" class="a-info-local">+ Dicas do local</a>
                         </div>
                     </aside>
                 </div>
@@ -87,230 +90,870 @@
             <div class="center">
                 <!-- Início do Card -->
                 <div class="card flight">
-                    <div class="left">
-                        <div class="entry">
-                            <span class="date-time">01/08/2013</span>
-                            <p class="entry-info">
-                                Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
                             </p>
-                            <div class="more-actions">
-                                <figure class="icon-action">
-                                    <img src="assets/img/icon-flight.svg">
-                                    <figcaption>aéreo</figcaption>
-                                </figure>
-                                <a href="#side-ticket" class="bt">Baixar Voucher</a>
-                            </div>
-                        </div>
+                        </footer>
                     </div>
-                    <div class="right">
-                        <div class="entry">
-                            <header class="head-card">
-                                <h2 class="title-card">ida</h2>
-                                <aside class="detail">
-                                    <ul class="list-detail">
-                                        <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
-                                        <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
-                                    </ul>
-                                </aside>
-                            </header>
-                            <div class="content-card">
-                                <dl class="info-voucher-card">
-                                    <dt>Família da Tarifa:</dt>
-                                    <dd>Privada</dd>
-                                    <dt>Tarifa:</dt>
-                                    <dd>Operadora</dd>
-                                    <dt>Classe:</dt>
-                                    <dd>Econômica</dd>
-                                </dl>
-                                <table class="table-info-voucher">
-                                    <thead>
-                                        <tr>
-                                            <th>WS</th>
-                                            <th>CIA</th>
-                                            <th>VOO</th>
-                                            <th>PARADAS</th>
-                                            <th>SAÍDA</th>
-                                            <th>CHEGADA</th>
-                                            <th>DURAÇÃO</th>
-                                            <th>TARIFÁRIO</th>
-                                            <th>INFO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img src="#"></td>
-                                            <td><img src="assets/img/logo-tam.png"></td>
-                                            <td>JJ8576</td>
-                                            <td>0</td>
-                                            <td>08:30</td>
-                                            <td>10:30</td>
-                                            <td>2h</td>
-                                            <td>HMSLW</td>
-                                            <td>---</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="foot-card-info">
-                        <p>
-                            Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
-                            Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
-                        </p>
-                    </footer>
-                </div>
-                <!-- Fim do Card -->
-                <!-- Início do Card -->
-                <div class="card road">
-                    <div class="left">
-                        <div class="entry">
-                            <span class="date-time">01/08/2013</span>
-                            <p class="entry-info">
-                                Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
-                            </p>
-                            <div class="more-actions">
-                                <figure class="icon-action">
-                                    <img src="assets/img/icon-flight.svg">
-                                    <figcaption>aéreo</figcaption>
-                                </figure>
-                                <a href="#side-ticket" class="bt">Baixar Voucher</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="entry">
-                            <header class="head-card">
-                                <h2 class="title-card">ida</h2>
-                                <aside class="detail">
-                                    <ul class="list-detail">
-                                        <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
-                                        <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
-                                    </ul>
-                                </aside>
-                            </header>
-                            <div class="content-card">
-                                <dl class="info-voucher-card">
-                                    <dt>Família da Tarifa:</dt>
-                                    <dd>Privada</dd>
-                                    <dt>Tarifa:</dt>
-                                    <dd>Operadora</dd>
-                                    <dt>Classe:</dt>
-                                    <dd>Econômica</dd>
-                                </dl>
-                                <table class="table-info-voucher">
-                                    <thead>
-                                        <tr>
-                                            <th>WS</th>
-                                            <th>CIA</th>
-                                            <th>VOO</th>
-                                            <th>PARADAS</th>
-                                            <th>SAÍDA</th>
-                                            <th>CHEGADA</th>
-                                            <th>DURAÇÃO</th>
-                                            <th>TARIFÁRIO</th>
-                                            <th>INFO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img src="#"></td>
-                                            <td><img src="assets/img/logo-tam.png"></td>
-                                            <td>JJ8576</td>
-                                            <td>0</td>
-                                            <td>08:30</td>
-                                            <td>10:30</td>
-                                            <td>2h</td>
-                                            <td>HMSLW</td>
-                                            <td>---</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="foot-card-info">
-                        <p>
-                            Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
-                            Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
-                        </p>
-                    </footer>
                 </div>
                 <!-- Fim do Card -->
                 <!-- Início do Card -->
                 <div class="card flight">
-                    <div class="left">
-                        <div class="entry">
-                            <span class="date-time">01/08/2013</span>
-                            <p class="entry-info">
-                                Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
                             </p>
-                            <div class="more-actions">
-                                <figure class="icon-action">
-                                    <img src="assets/img/icon-flight.svg">
-                                    <figcaption>aéreo</figcaption>
-                                </figure>
-                                <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="right">
-                        <div class="entry">
-                            <header class="head-card">
-                                <h2 class="title-card">ida</h2>
-                                <aside class="detail">
-                                    <ul class="list-detail">
-                                        <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
-                                        <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
-                                    </ul>
-                                </aside>
-                            </header>
-                            <div class="content-card">
-                                <dl class="info-voucher-card">
-                                    <dt>Família da Tarifa:</dt>
-                                    <dd>Privada</dd>
-                                    <dt>Tarifa:</dt>
-                                    <dd>Operadora</dd>
-                                    <dt>Classe:</dt>
-                                    <dd>Econômica</dd>
-                                </dl>
-                                <table class="table-info-voucher">
-                                    <thead>
-                                        <tr>
-                                            <th>WS</th>
-                                            <th>CIA</th>
-                                            <th>VOO</th>
-                                            <th>PARADAS</th>
-                                            <th>SAÍDA</th>
-                                            <th>CHEGADA</th>
-                                            <th>DURAÇÃO</th>
-                                            <th>TARIFÁRIO</th>
-                                            <th>INFO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img src="#"></td>
-                                            <td><img src="assets/img/logo-tam.png"></td>
-                                            <td>JJ8576</td>
-                                            <td>0</td>
-                                            <td>08:30</td>
-                                            <td>10:30</td>
-                                            <td>2h</td>
-                                            <td>HMSLW</td>
-                                            <td>---</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
                     </div>
-                    <footer class="foot-card-info">
-                        <p>
-                            Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
-                            Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
-                        </p>
-                    </footer>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card road">
+                    <div class="entry-card">
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">02/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-car.svg">
+                                        <figcaption>terrestre</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Fim do Card -->
+                <!-- Início do Card -->
+                <div class="card flight">
+                    <div class="entry-card">
+
+                        <div class="left">
+                            <div class="entry">
+                                <span class="date-time">01/08/2013</span>
+                                <p class="entry-info">
+                                    Apresentação no Aeroporto de São Paulo, com 1 hora de antecedência, embarque as 23:00 com destino a Miami.
+                                </p>
+                                <div class="more-actions">
+                                    <figure class="icon-action">
+                                        <img src="assets/img/icon-flight.svg">
+                                        <figcaption>aéreo</figcaption>
+                                    </figure>
+                                    <a href="#side-ticket" class="bt">Baixar Voucher</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="entry">
+                                <header class="head-card">
+                                    <h2 class="title-card">ida</h2>
+                                    <aside class="detail">
+                                        <ul class="list-detail">
+                                            <li class="item-detail date-time"><span class="weekday">Sábado</span>, <span class="day">15</span> de <span class="month">Junho</span> de <span class="year">2013</span></li>
+                                            <li class="item-detail origin-destiny"><span class="local-origin">São Paulo - Brasil <strong>(GRU)</strong></span> | <span class="local-destiny">Miami - EUA <strong>(MIA)</strong></span></li>
+                                        </ul>
+                                    </aside>
+                                </header>
+                                <div class="content-card">
+                                    <dl class="info-voucher-card">
+                                        <dt>Família da Tarifa:</dt>
+                                        <dd>Privada</dd>
+                                        <dt>Tarifa:</dt>
+                                        <dd>Operadora</dd>
+                                        <dt>Classe:</dt>
+                                        <dd>Econômica</dd>
+                                    </dl>
+                                    <table class="table-info-voucher">
+                                        <thead>
+                                            <tr>
+                                                <th>WS</th>
+                                                <th>CIA</th>
+                                                <th>VOO</th>
+                                                <th>PARADAS</th>
+                                                <th>SAÍDA</th>
+                                                <th>CHEGADA</th>
+                                                <th>DURAÇÃO</th>
+                                                <th>TARIFÁRIO</th>
+                                                <th>INFO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="#"></td>
+                                                <td><img src="assets/img/logo-tam.png"></td>
+                                                <td>JJ8576</td>
+                                                <td>0</td>
+                                                <td>08:30</td>
+                                                <td>10:30</td>
+                                                <td>2h</td>
+                                                <td>HMSLW</td>
+                                                <td>---</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="foot-card-info">
+                            <p>
+                                Para sua comodidade alem dos serviços já inclusos no pacote abaixo, você pode adicionar serviços extras ao seu roteiro, assim aproveitando ao máximo sua viagem.<br />
+                                Em caso de duvidas entre em contato com seu agente de viagem (tel. 00 11 0000-0000).
+                            </p>
+                        </footer>
+                    </div>
                 </div>
                 <!-- Fim do Card -->
             </div>
