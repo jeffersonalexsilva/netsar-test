@@ -12,13 +12,7 @@ div.card{
     overflow: hidden;
     margin: 20px 0;
     .entry-card{
-        display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
-        display: -ms-flexbox;           /* TWEENER - IE 10 */
-        display: -webkit-flex;          /* NEW - Chrome */
-        display: flex;
-        align-items: flex-center;
-        flex-direction: row;
+        @include display-flex();
         flex-wrap: wrap;
         .left,.right{
             // float:left;
@@ -67,21 +61,17 @@ div.card{
         }
         .right{
             @include box-flex(4);
-            // width:80%;
             background-color: $bg_right;
             header.head-card{
                 border-bottom: 1px solid $color_white;
                 padding-bottom: 5px;
                 margin-bottom: 5px;
-                h2.title-card,aside.detail{float: left}
                 h2.title-card{
                     font-size: $font_size_base + 2.5;
                     text-transform: uppercase;
-                    width: 35%;
                     overflow-wrap: break-word;
                 }
                 aside.detail{
-                    width: 65%;
                     ul.list-detail{
                         li.item-detail{
                             display: block;
@@ -131,7 +121,7 @@ div.card{
             }
         }
     }
-    &.city, &.general{
+    &.city, &.general, &.services{
         .right{
             header.head-card{
                 h2{
@@ -144,13 +134,7 @@ div.card{
     &.services{
         .content-card{
             .card.items{
-                display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
-                display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
-                display: -ms-flexbox;           /* TWEENER - IE 10 */
-                display: -webkit-flex;          /* NEW - Chrome */
-                display: flex;
-                align-items: flex-center;
-                flex-direction: row;
+                @include display-flex();
                 flex-wrap: wrap;
                 margin: 5px 0;
                 img.icon{

@@ -312,18 +312,13 @@ div.card {
         border-bottom: 1px solid #f2f2f2;
         padding-bottom: 5px;
         margin-bottom: 5px; }
-        div.card .entry-card .right header.head-card h2.title-card, div.card .entry-card .right header.head-card aside.detail {
-          float: left; }
         div.card .entry-card .right header.head-card h2.title-card {
           font-size: 3.5em;
           text-transform: uppercase;
-          width: 35%;
           overflow-wrap: break-word; }
-        div.card .entry-card .right header.head-card aside.detail {
-          width: 65%; }
-          div.card .entry-card .right header.head-card aside.detail ul.list-detail li.item-detail {
-            display: block;
-            padding: 5px 0; }
+        div.card .entry-card .right header.head-card aside.detail ul.list-detail li.item-detail {
+          display: block;
+          padding: 5px 0; }
         div.card .entry-card .right header.head-card:after {
           content: "";
           clear: both;
@@ -365,7 +360,7 @@ div.card {
       font-size: 0.8em;
       padding: 10px;
       margin: 0; }
-  div.card.city .right header.head-card h2, div.card.general .right header.head-card h2 {
+  div.card.city .right header.head-card h2, div.card.general .right header.head-card h2, div.card.services .right header.head-card h2 {
     float: none !important;
     width: 100% !important; }
   div.card.services .content-card .card.items {
@@ -564,6 +559,18 @@ div.card {
           clear: both;
           display: block; }
 
+footer#footer-page {
+  background-color: #bdbdbd; }
+  footer#footer-page .left {
+    padding: 20px; }
+    footer#footer-page .left ul li {
+      display: inline-block;
+      padding: 5px; }
+  footer#footer-page .copyright {
+    padding: 5px 0;
+    background-color: #f2f2f2;
+    text-align: center; }
+
 #principal .center:after {
   content: "";
   clear: both;
@@ -588,13 +595,43 @@ div.card {
     overflow: scroll;
     background-color: #f2f2f2; }
     .light-box .box .content {
-      padding: 20px; }
+      padding: 20px;
+      position: relative; }
       .light-box .box .content .entry-content dl.tips dt {
         margin: 5px 0; }
       .light-box .box .content .entry-content dl.tips dd {
         font-size: 0.9em;
         font-weight: 100;
         line-height: 1.3em; }
+      .light-box .box .content .entry-content .about-hotel {
+        padding: 20px 0; }
+      .light-box .box .content .entry-content .gallery {
+        padding: 20px 0;
+        border-top: 1px solid #bdbdbd;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (doesn't work very well) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        align-items: flex-center;
+        flex-direction: row; }
+        .light-box .box .content .entry-content .gallery figure.img-gallery {
+          -webkit-box-flex: 1;
+          /* OLD - iOS 6-, Safari 3.1-6 */
+          -moz-box-flex: 1;
+          /* OLD - Firefox 19- */
+          -webkit-flex: 1;
+          /* Chrome */
+          -ms-flex: 1;
+          /* IE 10 */
+          flex: 1; }
+          .light-box .box .content .entry-content .gallery figure.img-gallery img {
+            width: 100%;
+            height: auto; }
       .light-box .box .content a.close {
         display: block;
         float: right;
@@ -606,6 +643,26 @@ div.card {
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         border-radius: 3px; }
+    .light-box .box .box-img {
+      position: absolute;
+      z-index: -50;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.8); }
+      .light-box .box .box-img a.close-img {
+        font-size: 2em;
+        color: #f2f2f2; }
+      .light-box .box .box-img .box-img-content {
+        position: relative;
+        width: 80%;
+        height: 90%;
+        margin: 0 auto; }
+        .light-box .box .box-img .box-img-content img {
+          width: 100%;
+          height: auto; }
   .light-box:target {
     display: block; }
 

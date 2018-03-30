@@ -15,5 +15,11 @@
   float: left; }
   #principal header#page-header aside.side-info-banner div.info-local-banner {
     margin-left: 50px; }
+#principal div.card .entry-card .right header.head-card h2.title-card, #principal div.card .entry-card .right header.head-card aside.detail {
+  float: left; }
+#principal div.card .entry-card .right header.head-card h2.title-card {
+  width: 35%; }
+#principal div.card .entry-card .right header.head-card aside.detail {
+  width: 65%; }
 
 /*# sourceMappingURL=desktop.css.map */

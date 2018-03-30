@@ -1,0 +1,17 @@
+footer#footer-page{
+    background-color: $bg_shadow;
+    .left{
+        padding: 20px;
+        ul{
+            li{
+                display: inline-block;
+                padding: 5px;
+            }
+        }
+    }
+    .copyright{
+        padding: 5px 0;
+        background-color: $color_white;
+        text-align: center;
+    }
+}

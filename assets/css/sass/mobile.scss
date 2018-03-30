@@ -26,4 +26,18 @@ $width_content:98%;
             width: 30%;
         }
     }
+    div.card{
+        .entry-card{
+            .right{
+                header.head-card{
+                    h2.title-card{
+                        //width: 100%;
+                    }
+                    aside.detail{
+                        //width: 65%;
+                    }
+                }
+            }
+        }
+    }
 }
