@@ -3,13 +3,60 @@
 @import 'header';
 @import 'footer';
 
-@import url(mobile.css) (max-width:800px);
-@import url(desktop.css) (min-width:801px);
+@import url(mobile.css) (max-width:1024px);
+@import url(desktop.css) (min-width:1025px);
 
+$bg_lightbox: rgba(0,0,0,0.8);
 #principal{
     .center{
         &:after{
             @include clear-after(true);
         }
+    }
+}
+
+.light-box{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: $bg_lightbox;
+    .box{
+        left: 15%;
+        position: absolute;
+        z-index: 20;
+        top: 2%;
+        height: 100%;
+        width: 70%;
+        overflow: scroll;
+        background-color: $color_white;
+        .content{
+            padding: 20px;
+            .entry-content{
+                dl.tips{
+                    dt{margin: 5px 0}
+                    dd{
+                        font-size: $font_size_base - 0.1;
+                        font-weight: 100;
+                        line-height: 1.3em;
+                    }
+                }
+            }
+            a.close{
+                display: block;
+                float: right;
+                color: $color_white;
+                padding: 10px;
+                font-size: $font_size_base + 0.5;
+                background-color: $bg_lightbox;
+                @include border-radius($radius_border_button);
+            }
+        }
+    }
+    &:target{
+        display: block;
     }
 }

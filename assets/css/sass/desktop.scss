@@ -27,5 +27,16 @@ $width_content:1200px;
         aside.side-profile{
             float: right;
         }
+        aside.info-agency{
+            width: 20%;
+        }
+        aside.side-info-banner{
+            div{
+                float: left;
+                &.info-local-banner{
+                    margin-left: 50px;
+                }
+            }
+        }
     }
 }

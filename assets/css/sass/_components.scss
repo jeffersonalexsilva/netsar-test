@@ -77,10 +77,11 @@ div.card{
                 h2.title-card{
                     font-size: $font_size_base + 2.5;
                     text-transform: uppercase;
-                    width: 30%;
+                    width: 35%;
+                    overflow-wrap: break-word;
                 }
                 aside.detail{
-                    width: 70%;
+                    width: 65%;
                     ul.list-detail{
                         li.item-detail{
                             display: block;
@@ -93,6 +94,11 @@ div.card{
                 }
             }
             .content-card{
+                figure.picture-city{
+                    display: block;
+                    position: relative;
+                    img{width: 100%;height: auto;}
+                }
                 dl.info-voucher-card{
                     dt,dd{display: inline-block;padding: 5px;font-size: $font_size_base - 0.2}
                     dt{font-weight: 700}
@@ -107,22 +113,59 @@ div.card{
                     tr{padding: 5px 0;}
                     td{
                         padding: 5px;
-                        img{width: 100%;height: auto;max-width: 50px}
+                        &.company{
+                            img{width: 100%;height: auto;max-width: 50px}
+                        }
+                        &.flag{
+                            img{display: inline;margin: 2px;max-width: 32px;}
+                        }
                     }
                 }
             }
-        }
-        &.flight{
-    
-        }
-        &.services{
-            
         }
         footer.foot-card-info{
             p{
                 font-size: $font_size_base - 0.2;
                 padding: 10px;
                 margin: 0;
+            }
+        }
+    }
+    &.city, &.general{
+        .right{
+            header.head-card{
+                h2{
+                    float: none !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    &.services{
+        .content-card{
+            .card.items{
+                display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+                display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+                display: -ms-flexbox;           /* TWEENER - IE 10 */
+                display: -webkit-flex;          /* NEW - Chrome */
+                display: flex;
+                align-items: flex-center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 5px 0;
+                img.icon{
+                    @include box-flex(1);
+                    padding: 5px;
+                    background-color: $bg_left;
+                }
+                div.description{
+                    @include box-flex(4);
+                    padding: 10px;
+                    font-size: $font_size_base - 0.2;
+                }
+                button.bt{
+                    @include box-flex(1);
+                }
             }
         }
     }

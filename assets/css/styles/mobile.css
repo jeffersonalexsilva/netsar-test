@@ -1,5 +1,15 @@
 .center {
-  width: 90%;
+  width: 98%;
   margin: 0 auto; }
+
+#principal header#page-header aside.side-tag-page, #principal header#page-header nav.nav-menu-top {
+  float: left;
+  margin-right: 30px; }
+#principal header#page-header nav.nav-menu-top ul li {
+  display: inline-block; }
+#principal header#page-header aside.side-profile {
+  float: right; }
+#principal header#page-header aside.info-agency {
+  width: 30%; }
 
 /*# sourceMappingURL=mobile.css.map */

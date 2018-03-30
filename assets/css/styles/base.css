@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700,900");
-@import url(mobile.css) (max-width: 800px);
-@import url(desktop.css) (min-width: 801px);
+@import url(mobile.css) (max-width: 1024px);
+@import url(desktop.css) (min-width: 1025px);
 *, html {
   margin: 0;
   padding: 0;
@@ -317,9 +317,10 @@ div.card {
         div.card .entry-card .right header.head-card h2.title-card {
           font-size: 3.5em;
           text-transform: uppercase;
-          width: 30%; }
+          width: 35%;
+          overflow-wrap: break-word; }
         div.card .entry-card .right header.head-card aside.detail {
-          width: 70%; }
+          width: 65%; }
           div.card .entry-card .right header.head-card aside.detail ul.list-detail li.item-detail {
             display: block;
             padding: 5px 0; }
@@ -327,6 +328,12 @@ div.card {
           content: "";
           clear: both;
           display: block; }
+      div.card .entry-card .right .content-card figure.picture-city {
+        display: block;
+        position: relative; }
+        div.card .entry-card .right .content-card figure.picture-city img {
+          width: 100%;
+          height: auto; }
       div.card .entry-card .right .content-card dl.info-voucher-card dt, div.card .entry-card .right .content-card dl.info-voucher-card dd {
         display: inline-block;
         padding: 5px;
@@ -346,14 +353,69 @@ div.card {
           padding: 5px 0; }
         div.card .entry-card .right .content-card table.table-info-voucher td {
           padding: 5px; }
-          div.card .entry-card .right .content-card table.table-info-voucher td img {
+          div.card .entry-card .right .content-card table.table-info-voucher td.company img {
             width: 100%;
             height: auto;
             max-width: 50px; }
+          div.card .entry-card .right .content-card table.table-info-voucher td.flag img {
+            display: inline;
+            margin: 2px;
+            max-width: 32px; }
     div.card .entry-card footer.foot-card-info p {
       font-size: 0.8em;
       padding: 10px;
       margin: 0; }
+  div.card.city .right header.head-card h2, div.card.general .right header.head-card h2 {
+    float: none !important;
+    width: 100% !important; }
+  div.card.services .content-card .card.items {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    align-items: flex-center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 0; }
+    div.card.services .content-card .card.items img.icon {
+      -webkit-box-flex: 1;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-flex: 1;
+      /* OLD - Firefox 19- */
+      -webkit-flex: 1;
+      /* Chrome */
+      -ms-flex: 1;
+      /* IE 10 */
+      flex: 1;
+      padding: 5px;
+      background-color: #828282; }
+    div.card.services .content-card .card.items div.description {
+      -webkit-box-flex: 4;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-flex: 4;
+      /* OLD - Firefox 19- */
+      -webkit-flex: 4;
+      /* Chrome */
+      -ms-flex: 4;
+      /* IE 10 */
+      flex: 4;
+      padding: 10px;
+      font-size: 0.8em; }
+    div.card.services .content-card .card.items button.bt {
+      -webkit-box-flex: 1;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-flex: 1;
+      /* OLD - Firefox 19- */
+      -webkit-flex: 1;
+      /* Chrome */
+      -ms-flex: 1;
+      /* IE 10 */
+      flex: 1; }
 
 #principal header#page-header {
   background-color: #e0e0e0;
@@ -420,14 +482,12 @@ div.card {
         top: 0;
         left: 0;
         height: 100%;
-        width: 20%;
         background-color: rgba(244, 244, 244, 0.9); }
         #principal header#page-header div.header-area-info .center aside.info-agency div.entry {
           padding: 20px; }
           #principal header#page-header div.header-area-info .center aside.info-agency div.entry figure.logo-agency {
             display: block;
-            padding: 10px;
-            margin: 20px 0; }
+            padding: 10px; }
             #principal header#page-header div.header-area-info .center aside.info-agency div.entry figure.logo-agency img {
               width: 100%;
               height: auto; }
@@ -474,7 +534,6 @@ div.card {
         right: 0;
         bottom: 0; }
         #principal header#page-header div.header-area-info .center aside.side-info-banner div {
-          float: left;
           padding: 15px 20px; }
           #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-banner-welcome {
             padding-top: 40px; }
@@ -491,17 +550,15 @@ div.card {
               font-size: 0.8em;
               color: #f2f2f2;
               margin: 0 50px; }
-          #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner {
-            margin-left: 50px; }
-            #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner h2.title-local {
-              font-size: 2.5em; }
-              #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner h2.title-local span.hello {
-                display: block;
-                font-size: 0.3em;
-                font-weight: normal; }
-            #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner a.a-info-local {
-              display: inline-block;
-              font-size: 0.8em; }
+          #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner h2.title-local {
+            font-size: 2.5em; }
+            #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner h2.title-local span.hello {
+              display: block;
+              font-size: 0.3em;
+              font-weight: normal; }
+          #principal header#page-header div.header-area-info .center aside.side-info-banner div.info-local-banner a.a-info-local {
+            display: inline-block;
+            font-size: 0.8em; }
         #principal header#page-header div.header-area-info .center aside.side-info-banner:after {
           content: "";
           clear: both;
@@ -511,5 +568,45 @@ div.card {
   content: "";
   clear: both;
   display: block; }
+
+.light-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .light-box .box {
+    left: 15%;
+    position: absolute;
+    z-index: 20;
+    top: 2%;
+    height: 100%;
+    width: 70%;
+    overflow: scroll;
+    background-color: #f2f2f2; }
+    .light-box .box .content {
+      padding: 20px; }
+      .light-box .box .content .entry-content dl.tips dt {
+        margin: 5px 0; }
+      .light-box .box .content .entry-content dl.tips dd {
+        font-size: 0.9em;
+        font-weight: 100;
+        line-height: 1.3em; }
+      .light-box .box .content a.close {
+        display: block;
+        float: right;
+        color: #f2f2f2;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+  .light-box:target {
+    display: block; }
 
 /*# sourceMappingURL=base.css.map */

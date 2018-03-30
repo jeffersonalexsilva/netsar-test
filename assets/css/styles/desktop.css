@@ -9,5 +9,11 @@
   display: inline-block; }
 #principal header#page-header aside.side-profile {
   float: right; }
+#principal header#page-header aside.info-agency {
+  width: 20%; }
+#principal header#page-header aside.side-info-banner div {
+  float: left; }
+  #principal header#page-header aside.side-info-banner div.info-local-banner {
+    margin-left: 50px; }
 
 /*# sourceMappingURL=desktop.css.map */

@@ -1,5 +1,29 @@
 @import 'functions';
-$width_content:90%;
+$width_content:98%;
 .center{
     @include center-content($width_content);
+}
+#principal{
+    header#page-header{
+        aside.side-tag-page,nav.nav-menu-top{
+            float: left;
+            margin-right: 30px;
+        }
+        nav.nav-menu-top{
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+
+                    }
+                }
+            }
+        }
+        aside.side-profile{
+            float: right;
+        }
+        aside.info-agency{
+            width: 30%;
+        }
+    }
 }
